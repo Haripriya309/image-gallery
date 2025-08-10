@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Responsive Image Gallery</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+
+<h1>Image Gallery</h1>
+<div class="filter-buttons">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('animals')">Animals</button>
+    <button onclick="filterImages('city')">City</button>
+</div>
+
+<div class="gallery">
+    <img src="d:\Gallary\image1.jpeg" class="nature">
+    <img src="d:\Gallary\image2.jpeg" class="animals">
+    <img src="d:\Gallary\image3.jpeg" class="city">
+    <img src="d:\Gallary\image4.jpeg" class="nature"> 
+    <img src="d:\Gallary\image5.jpeg" class="animals"> 
+    <img src="d:\Gallary\image6.jpeg" class="city">
+ </div>
+ <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a classs="next" onclick="changeSlide(1)">&#10095;</a>
+ </div>
+ <script src="script.js"></script>
+ </body>
+ </html>
